@@ -25,15 +25,27 @@
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to MintchocoTalk</h1>
       <p class="welcome-header__text">
-        If you have a MintchocoTalk Account, log in with your email or phone
-        number
+        If you have a MintchocoTalk Account,<br />log in with your email or
+        phone number
       </p>
     </header>
-    <form id="login-form">
-      <input type="text" placeholder="Email or phone number" />
-      <input type="password" placeholder="Password" />
-      <input type="submit" value="Log In" />
-      <a href="/">Find Mintchoco Account or Password</a>
+    <form action="friends.html" method="" id="login-form">
+      <input
+        name="username"
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+        required
+      />
+      <input
+        name="password"
+        class="login-form__input"
+        type="password"
+        placeholder="Password"
+        required
+      />
+      <input class="login-form__btn" type="submit" value="Log In" />
+      <a class="login-form__a" href="/">Find Mintchoco Account or Password</a>
     </form>
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
