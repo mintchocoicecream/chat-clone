@@ -28,6 +28,7 @@
   margin-top: 8px;
   color: rgba(0, 0, 0, 0.5);
   font-size: 17px;
+  font-weight: 400;
 }
 
 .user-components__avatar--xl {
@@ -46,5 +47,13 @@
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.user-component__time {
+  display: block;
+  margin-bottom: 10px;
 }
