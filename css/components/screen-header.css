@@ -15,3 +15,14 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.find_header-spans {
+  position: relative;
+  display: flex;
+}
+
+.find__header-xs {
+  position: absolute;
+  right: -5px;
+  bottom: 15px;
+}

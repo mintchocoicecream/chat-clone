@@ -23,3 +23,9 @@
   left: 15px;
   bottom: 8px;
 }
+
+.nav__notification-xs {
+  position: absolute;
+  left: 25px;
+  bottom: 15px;
+}
