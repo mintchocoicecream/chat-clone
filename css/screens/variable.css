@@ -1,5 +1,6 @@
 :root {
   --mint: rgb(172, 235, 224);
+  --blue: #0054a6;
   --light-mint: rgba(172, 235, 225, 0.356);
   --horizontal-space: 25px;
   --border-line: 1px solid rgba(0, 0, 0, 0.2);

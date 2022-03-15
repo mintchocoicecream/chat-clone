@@ -88,3 +88,71 @@
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
+
+.write-message {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+}
+
+.write-message i {
+  opacity: 0.7;
+}
+
+.write-message__column:first-child {
+  width: 10%;
+}
+
+.write-message__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.write-message input {
+  padding: 10px;
+  width: 100%;
+  border: var(--border-line);
+  border-radius: 15px;
+}
+
+.write-message__column:last-child > i,
+.write-message__column:last-child button {
+  position: absolute;
+  right: -5px;
+  top: 3px;
+}
+
+.write-message__column:last-child > i {
+  right: 28px;
+  top: 17px;
+}
+
+.write-message__column button {
+  background-color: var(--mint);
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.write-message__column button i {
+  opacity: 1;
+}
+
+.write-message__column button:focus,
+.write-message__column button:active {
+  outline: none;
+}
+
+.write-message__column button:hover {
+  background-color: var(--light-mint);
+  color: var(--light-black);
+}
