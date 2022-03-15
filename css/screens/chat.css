@@ -18,6 +18,9 @@
 #chat-screen .status-bar {
   z-index: 2;
 }
+#chat-screen .alt-header__title {
+  font-weight: 600;
+}
 
 .main-chat {
   margin-top: 80px;
@@ -80,9 +83,10 @@
 }
 
 .message-row--own .message__bubble {
-  background-color: var(--mint);
+  background-color: var(--blue);
   border-top-left-radius: 15px;
   border-top-right-radius: 0;
+  color: white;
 }
 
 .message-row--own .message__info {
@@ -97,7 +101,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 25px;
+  padding: 8px 25px;
   box-sizing: border-box;
 }
 
@@ -117,30 +121,36 @@
 .write-message input {
   padding: 10px;
   width: 100%;
+  box-sizing: border-box;
   border: var(--border-line);
   border-radius: 15px;
+}
+
+.write-message input:focus {
+  border: 1px solid var(--blue);
 }
 
 .write-message__column:last-child > i,
 .write-message__column:last-child button {
   position: absolute;
-  right: -5px;
-  top: 3px;
+  right: -2px;
+  top: 5px;
 }
 
 .write-message__column:last-child > i {
   right: 28px;
-  top: 17px;
+  top: 19px;
 }
 
 .write-message__column button {
-  background-color: var(--mint);
+  background-color: var(--blue);
   border: none;
   width: 28px;
   height: 28px;
   border-radius: 50%;
   cursor: pointer;
   transition: 0.3s ease-in-out;
+  color: white;
 }
 
 .write-message__column button i {
@@ -153,6 +163,6 @@
 }
 
 .write-message__column button:hover {
-  background-color: var(--light-mint);
+  background-color: var(--light-blue);
   color: var(--light-black);
 }

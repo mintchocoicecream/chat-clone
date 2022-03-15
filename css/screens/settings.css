@@ -19,3 +19,7 @@
 .settings__setting-column:last-child {
   opacity: 0.7;
 }
+
+.settings__setting-column-detail {
+  font-size: 15px;
+}

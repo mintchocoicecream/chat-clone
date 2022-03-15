@@ -112,7 +112,7 @@
 }
 
 .open-post__heart-count i:hover {
-  color: var(--mint);
+  color: var(--blue);
 }
 
 .open-post__heart-count span {
