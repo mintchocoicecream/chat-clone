@@ -17,6 +17,7 @@
 
 #chat-screen .status-bar {
   z-index: 2;
+  opacity: 1;
 }
 #chat-screen .alt-header__title {
   font-weight: 600;
@@ -76,8 +77,16 @@
   align-items: flex-end;
 }
 
+.message__info-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .message__bubble {
+  width: fit-content;
   background-color: white;
+  margin-top: 10px;
   padding: 10px 12px;
   border-radius: 15px;
   border-top-left-radius: 0px;

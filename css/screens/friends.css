@@ -33,6 +33,23 @@
   font-weight: 500;
 }
 
+.friends-screen__channel-toggle {
+  cursor: pointer;
+}
+
+@keyframes chevronUpToggle {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.friends-screen__channel-toggle:hover {
+  animation: chevronUpToggle 1s ease-in-out infinite;
+}
+
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -52,8 +69,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 128px;
   color: white;
+  font-size: 150px;
   animation: hideSplashScreen 0.8s ease-in-out forwards;
   animation-delay: 1.5s;
+}
+
+@keyframes splashScreen {
+  from {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#splash-screen span {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: splashScreen 1s ease-in-out;
+}
+
+#splash-screen span > h6 {
+  position: absolute;
+  color: var(--blue);
+  font-size: 25px;
+  font-weight: bolder;
 }

@@ -4,12 +4,17 @@
 
 .user-component {
   justify-content: space-between;
+  margin-bottom: 25px;
 }
 
 .user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
+}
+
+.user-component__column {
+  cursor: pointer;
 }
 
 .user-components__avatar {
@@ -59,7 +64,44 @@
   align-items: end;
 }
 
+.user-component__ch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.user-components__channel {
+  position: absolute;
+  color: var(--blue);
+  font-weight: 900;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 22px;
+}
+
+.user-components__channel--sm {
+  font-size: 18px;
+}
+
+.user-components__channel--xs {
+  font-size: 16px;
+  margin-right: 12px;
+}
+
 .user-component__time {
   display: block;
   margin-bottom: 10px;
+}
+
+.user-component__music {
+  font-size: 12px;
+  border: 2px solid var(--light-green);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.user-component__music i {
+  margin-left: 3px;
+  color: var(--light-green);
 }
