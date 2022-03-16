@@ -104,15 +104,26 @@
   bottom: 8px;
   right: 8px;
   font-size: 12px;
-}
-
-.open-post__heart-count i {
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 }
 
-.open-post__heart-count i:hover {
-  color: var(--blue);
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: var(--blue);
+    transform: scale(1.5);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
 }
 
 .open-post__heart-count span {
