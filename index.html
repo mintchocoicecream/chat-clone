@@ -31,10 +31,19 @@
     </header>
     <form action="friends.html" method="" id="login-form">
       <input
+        id="login-form__username"
         name="username"
         class="login-form__input"
         type="text"
-        placeholder="Email or phone number"
+        placeholder="Username"
+        min="3"
+        required
+      />
+      <input
+        name="useremail"
+        class="login-form__input"
+        type="email"
+        placeholder="Email"
         required
       />
       <input
@@ -46,7 +55,9 @@
         required
       />
       <input class="login-form__btn" type="submit" value="Log In" />
-      <a class="login-form__a" href="/">Find BlueBlah Account or Password</a>
+      <a class="login-form__a" href="index.html"
+        >Find BlueBlah Account or Password</a
+      >
     </form>
     <div id="no-mobile">
       <span>Please reduce the screen width</span>
