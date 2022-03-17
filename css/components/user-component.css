@@ -17,6 +17,10 @@
   cursor: pointer;
 }
 
+.user-component__column:hover .user-component__title {
+  color: var(--blue);
+}
+
 .user-components__avatar {
   width: 70px;
   height: 70px;

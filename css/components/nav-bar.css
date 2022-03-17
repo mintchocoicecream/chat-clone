@@ -23,7 +23,7 @@
     transform: none;
   }
   50% {
-    transform: translateY(-5px);
+    transform: translateY(-4px);
   }
   100% {
     transform: none;
