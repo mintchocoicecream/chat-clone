@@ -68,6 +68,7 @@
 }
 
 .no-mobile__icon .fa-tablet-screen-button {
+  will-change: transform;
   animation: noMobileIcon 2s ease-in-out infinite;
 }
 
