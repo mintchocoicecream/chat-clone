@@ -61,6 +61,23 @@
             Latest Version
           </div>
         </li>
+        <li class="settings__setting" id="settingsLogout">
+          <div class="settings__setting-column">
+            <i class="fa-solid fa-right-from-bracket"></i>
+            <span>Logout</span>
+          </div>
+          <div class="settings__setting-column"></div>
+        </li>
+        <div id="logoutModal" class="settings__logoutModal">
+          <div class="settings__logoutModal-content">
+            <span class="settings__logoutModal-close">&times;</span>
+            <p>Are you sure to Logout?</p>
+            <div class="settings__logoutModal-buttons">
+              <button id="logoutBtn">Log out</button>
+              <button id="cancelBtn">Cancel</button>
+            </div>
+          </div>
+        </div>
       </ul>
     </main>
 
@@ -103,5 +120,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="index.js"></script>
+    <script src="settings.js"></script>
   </body>
 </html>

@@ -14,6 +14,12 @@
 
 .settings__setting span {
   font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.settings__setting span:hover {
+  color: var(--blue);
 }
 
 .settings__setting-column:last-child {
@@ -22,4 +28,83 @@
 
 .settings__setting-column-detail {
   font-size: 15px;
+}
+
+@keyframes logoutModal {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.settings__logoutModal {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: logoutModal 1s ease-in-out;
+}
+
+.settings__logoutModal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border: 2px solid var(--light-blue);
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.329);
+  border-radius: 5px;
+  padding: 15px;
+  width: 300px;
+}
+
+.settings__logoutModal-content span {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  font-size: 30px;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.settings__logoutModal-content span:hover {
+  opacity: 0.5;
+}
+
+.settings__logoutModal-content p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.settings__logoutModal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px;
+}
+
+.settings__logoutModal-buttons button {
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.settings__logoutModal-buttons button:first-child {
+  background-color: var(--blue);
+  color: white;
+}
+
+.settings__logoutModal-buttons button:first-child:hover {
+  background-color: var(--light-blue);
+}
+
+.settings__logoutModal-buttons button:last-child:hover {
+  opacity: 0.5;
 }
