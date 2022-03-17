@@ -9,10 +9,10 @@ const currentLink = document.location.href;
 function onChatLoginSubmit() {
     const username = usernameInput.value;
     localStorage.setItem(CHATUSERNAME_KEY, username);
-    paintGreetings(username);
+    painting(username);
 }
 
-function paintGreetings(username) {
+function painting(username) {
     const userName = userComponentMe.querySelector("h4");
     userName.innerText = username;
 }
@@ -23,5 +23,5 @@ if (savedChatUsername === null) {
     if(currentLink === 'https://mintchocoicecream.github.io/chat-clone/index.html'){
         window.location.replace('https://mintchocoicecream.github.io/chat-clone/friends.html');
     }
-    paintGreetings(savedChatUsername); 
+    painting(savedChatUsername); 
 }
