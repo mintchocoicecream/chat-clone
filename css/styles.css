@@ -25,6 +25,17 @@ body {
   color: #2e363e;
 }
 
+@keyframes mainScreenUp {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main-screen {
   padding: 0px var(--horizontal-space);
+  animation: mainScreenUp 1s ease-in-out;
 }
