@@ -1,3 +1,21 @@
+// my profile click
+const myProfile = document.getElementById("user-component__me");
+const profileModal = document.getElementById("profile");
+const profileClose = document.getElementById("profile_modalClose");
+
+
+function handleShowProfile() {
+    profileModal.style.display = "flex";
+}
+
+profileClose.onclick = () => {
+    profileModal.style.display = "none";
+}
+
+myProfile.addEventListener("click", handleShowProfile);
+
+
+
 // friends channel-toggle
 
 const channelToggle = document.getElementById("channelToggle");

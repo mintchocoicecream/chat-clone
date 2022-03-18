@@ -28,6 +28,12 @@
   margin-right: 20px;
 }
 
+.user-components__avatar-nomargin {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
+
 .user-component__title {
   font-weight: bold;
   font-size: 20px;
@@ -108,4 +114,22 @@
 .user-component__music i {
   margin-left: 3px;
   color: var(--light-green);
+}
+
+.profile__user-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.profile__user-name {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  border-radius: 5px;
+  width: fit-content;
 }

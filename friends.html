@@ -10,7 +10,7 @@
   <body>
     <div class="status-bar">
       <div class="status-bar__column">
-        <span>No Service</span>
+        <span></span>
         <i class="fas fa-wifi"></i>
       </div>
       <div id="clock" class="status-bar__column">
@@ -153,11 +153,46 @@
         </li>
       </ul>
     </nav>
+
     <div id="splash-screen">
       <span>
         <h6>BlueBlah</h6>
         <i class="fa-solid fa-comment"></i
       ></span>
+    </div>
+    <div id="profile">
+      <div class="profile__contents">
+        <div class="profile__icons">
+          <span id="profile_modalClose" class="profile__modal-close"
+            >&times;</span
+          >
+          <i class="fa-solid fa-arrows-rotate fa-xs"></i>
+        </div>
+        <div class="profile__mainInfo">
+          <div class="profile__user-component" id="user-component__me">
+            <img
+              class="user-components__avatar-nomargin user-components__avatar--xl"
+              src="img/KakaoTalk_20220308_205327725.jpg"
+              alt="profile_photo"
+            />
+            <h4 class="profile__user-name">Blue</h4>
+          </div>
+          <div class="profile__user-edits">
+            <span class="profile__user-edits_icons">
+              <i class="far fa-comment fa-xl"></i>
+              <h6 class="profile__user-edits_names">나와 채팅</h6>
+            </span>
+            <span class="profile__user-edits_icons">
+              <i class="fa-solid fa-pencil fa-lg"></i>
+              <h6 class="profile__user-edits_names">프로필 수정</h6>
+            </span>
+            <span class="profile__user-edits_icons">
+              <i class="fa-solid fa-quote-right fa-xl"></i>
+              <h6 class="profile__user-edits_names">내 스토리</h6>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
     <div id="no-mobile">
       <span>Please reduce the screen width</span>
