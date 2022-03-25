@@ -16,6 +16,10 @@
   margin-left: 25px;
 }
 
+.screen-header__icons span i {
+  cursor: pointer;
+}
+
 .find_header-spans {
   position: relative;
   display: flex;
@@ -25,6 +29,22 @@
   position: absolute;
   right: -5px;
   bottom: 15px;
+}
+
+@keyframes scaleMusic {
+  0% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(15deg);
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: scaleMusic 2s ease-in-out infinite;
 }
 
 @keyframes rotateCog {

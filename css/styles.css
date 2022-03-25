@@ -11,6 +11,7 @@
 @import "components/alt-screen-header.css";
 @import "components/no-mobile.css";
 @import "components/profile.css";
+@import "components/music.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -39,6 +40,7 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
   animation: mainScreenUp 1s ease-in-out;
+  overflow: auto;
 }
 
 .hidden {

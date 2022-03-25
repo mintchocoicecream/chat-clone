@@ -1,0 +1,442 @@
+@keyframes showProfile {
+  from {
+    opacity: 0;
+    transform: translateY(800px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#music {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--blue);
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: showProfile 0.8s ease-in-out;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin: 20px 0;
+  width: 380px;
+}
+/* header */
+
+.screen__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.screen__header i {
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.screen__header i:hover {
+  color: rgba(182, 182, 182, 0.87);
+}
+
+/* Artist */
+
+.screen__artist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.screen__artist span {
+  padding: 5px 0;
+}
+
+.screen__artist img {
+  border-radius: 50%;
+  box-shadow: 0em 0.3rem 0.8rem 0.5em rgb(250, 236, 238);
+}
+
+.screen__artist span:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.screen__artist span:nth-child(3) {
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.3;
+}
+
+/* Buttons */
+
+.screen__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  margin-bottom: 20px;
+}
+
+.screen__buttons div {
+  width: 50%;
+  margin: 0 10px;
+  display: flex;
+}
+
+.screen__buttons div:first-child {
+  justify-content: flex-end;
+}
+
+.screen__buttons div:last-child {
+  justify-content: flex-start;
+}
+
+.screen__buttons div > span {
+  display: flex;
+  justify-content: center;
+  width: 90px;
+  border-radius: 20px;
+  padding: 12px 15px;
+  box-shadow: 0em 0.1rem 0.8rem 0.2em rgba(230, 230, 230, 0.5);
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.screen__buttons div > span:hover {
+  color: pink;
+}
+
+.screen__buttons-shuffle span {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.screen__buttons-heart > span {
+  background-color: white;
+}
+
+.screen__buttons-heart > span i {
+  margin-right: 8px;
+}
+
+.screen__buttons-heart > span span {
+  color: rgba(182, 182, 182, 0.87);
+}
+
+/* playlist */
+.screen__playlist {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 280px;
+  overflow-y: scroll;
+}
+
+.screen__playlist::-webkit-scrollbar {
+  display: none;
+}
+
+.screen__playlist-song {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  cursor: pointer;
+  border-radius: 10px;
+  margin: 5px 3px;
+}
+
+.screen__playlist-song:hover {
+  background-color: rgba(255, 192, 203, 0.705);
+}
+
+.screen__playlist-song:nth-child(2) {
+  box-shadow: 0px 3px 5px 5px rgba(226, 226, 226, 0.2);
+}
+
+.screen__playlist-song-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.screen__playlist-song img {
+  border-radius: 8px;
+}
+
+.screen__playlist-song-bars {
+  display: flex;
+  position: absolute;
+  top: 25px;
+}
+
+@-webkit-keyframes scale-down-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(0.3);
+    transform: scaleY(0.3);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
+@keyframes scale-down-ver-bottom {
+  0% {
+    -webkit-transform: scaleY(1.5);
+    transform: scaleY(1.5);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+  100% {
+    -webkit-transform: scaleY(0.8);
+    transform: scaleY(0.8);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+  }
+}
+
+.screen__playlist-song-bars span {
+  display: block;
+  height: 12px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 3px;
+  -webkit-animation: scale-down-ver-bottom 0.5s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+  animation: scale-down-ver-bottom 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    infinite;
+}
+
+.screen__playlist-song-bars span:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.screen__playlist-song-bars span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.screen__playlist-song-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.screen__playlist-song-info span {
+  display: flex;
+  margin-left: 20px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.screen__playlist-song-info span:first-child {
+  flex-wrap: nowrap;
+  font-size: 15px;
+  color: rgba(182, 182, 182, 0.87);
+}
+
+.screen__playlist-song-info span:last-child {
+  font-size: 18px;
+}
+
+.screen__playlist-song-icon {
+  padding: 5px;
+}
+
+.screen__playlist-song-icon i {
+  cursor: pointer;
+}
+
+.screen__playlist-song-icon i:hover {
+  color: white;
+}
+
+/* current song */
+
+.screen__currentSong {
+  background-color: rgb(44, 44, 44);
+  box-shadow: 0em 0.1rem 0.8rem 0.2em rgb(204, 204, 204);
+  color: white;
+  margin-top: 20px;
+  padding: 15px 20px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  cursor: normal;
+}
+
+.screen__currentSong-info {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 70%;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+@keyframes songs {
+  from {
+    transform: translateX(280px);
+  }
+  to {
+    transform: translateX(-180px);
+  }
+}
+
+.screen__currentSong-info span {
+  padding: 3px 0;
+  font-weight: bold;
+  margin-left: 10px;
+  cursor: default;
+  animation: songs 5s ease-in infinite;
+}
+
+.screen__currentSong-info span:first-child {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.screen__currentSong-info span:last-child {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+.screen__currentSong-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  padding-left: 10px;
+}
+
+.screen__currentSong-icons span i {
+  cursor: pointer;
+}
+
+.screen__currentSong-icons span i:hover {
+  color: pink;
+}
+
+.screen__playing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.screen__playing-albumImg {
+  margin-top: 50px;
+}
+
+.screen__playing-albumImg img {
+  border-radius: 20px;
+  box-shadow: 0em 0.7rem 0.8rem 0.8em rgb(250, 236, 238);
+}
+
+.screen__playing-songInfo {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen__playing-songInfo span {
+  font-weight: bold;
+}
+
+.screen__playing-songInfo span:first-child {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.screen__playing-songInfo span:last-child {
+  font-size: 15px;
+  padding: 5px 0;
+  color: rgba(182, 182, 182, 0.87);
+}
+
+.screen__playing-bar {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+}
+.screen__playing-bar label {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(182, 182, 182, 0.87);
+  padding: 0 5px;
+}
+
+.screen__playing-bar input {
+  accent-color: pink;
+}
+
+.screen_icons {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0;
+  padding: 0 10px;
+}
+
+.screen_icons > i:nth-child(1),
+.screen_icons i:nth-child(5) {
+  color: rgba(182, 182, 182, 0.7);
+}
+
+.screen_icons > i:hover {
+  opacity: 0.7;
+}
+
+.screen_icons > i:nth-child(3):hover {
+  opacity: 1;
+}
+
+.fa-play {
+  color: white;
+}
+
+.screen_icons span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 50%;
+  padding: 30px 23px;
+  font-size: 20px;
+  box-shadow: 0em 0.2rem 0.5rem 0.3em rgb(226, 226, 226);
+  cursor: pointer;
+}
+
+.screen_icons i {
+  cursor: pointer;
+}
+
+.screen_icons span:hover i {
+  color: pink;
+}

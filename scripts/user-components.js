@@ -1,6 +1,7 @@
 // save username to localstorage 
 const userLoginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("login-form__username");
+const userProfile = document.querySelector(".profile__user-name");
 const userComponentMe = document.getElementById("user-component__me");
 const CHATUSERNAME_KEY = "chatusername";
 const savedChatUsername = localStorage.getItem(CHATUSERNAME_KEY);
@@ -15,6 +16,7 @@ function onChatLoginSubmit() {
 function painting(username) {
     const userName = userComponentMe.querySelector("h4");
     userName.innerText = username;
+    userProfile.innerText = username;
 }
 
 if (savedChatUsername === null) {

@@ -2,6 +2,9 @@
 const myProfile = document.getElementById("user-component__me");
 const profileModal = document.getElementById("profile");
 const profileClose = document.getElementById("profile_modalClose");
+const friendsMusic = document.querySelector(".user-component__music");
+const friendsMusicModal = document.getElementById("friendsMusic");
+const friendsMusicClose = document.getElementById("musicClose");
 
 
 function handleShowProfile() {
@@ -12,8 +15,16 @@ profileClose.onclick = () => {
     profileModal.style.display = "none";
 }
 
-myProfile.addEventListener("click", handleShowProfile);
+function handleShowMusic() {
+    friendsMusicModal.style.display = "flex";
+}
 
+friendsMusicClose.onclick = () => {
+    friendsMusicModal.style.display = "none";
+}
+
+myProfile.addEventListener("click", handleShowProfile);
+friendsMusic.addEventListener("click", handleShowMusic);
 
 
 // friends channel-toggle

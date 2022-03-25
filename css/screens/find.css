@@ -20,6 +20,11 @@
   color: var(--light-black);
 }
 
+.open-chat {
+  margin-bottom: 10px;
+  overflow: auto;
+}
+
 .open-chat__header {
   display: flex;
   justify-content: space-between;
