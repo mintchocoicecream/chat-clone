@@ -12,6 +12,7 @@
 @import "components/no-mobile.css";
 @import "components/profile.css";
 @import "components/music.css";
+@import "components/header-music.css";
 
 /* Screens */
 @import "screens/login.css";
@@ -25,6 +26,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
+  position: relative;
 }
 
 @keyframes mainScreenUp {

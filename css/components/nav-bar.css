@@ -60,7 +60,7 @@
 }
 
 .nav__link:hover {
-  color: pink;
+  opacity: 0.6;
 }
 
 .nav__btn:nth-child(2) {

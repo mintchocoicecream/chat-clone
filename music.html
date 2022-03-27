@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Music - BlueBlah</title>
+  </head>
+  <body id="header-music">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span></span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div id="clock" class="status-bar__column">
+        <span></span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-xl"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Music</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fas fa-search fa-lg"></i>
+      </div>
+    </header>
+    <main class="header-music__main-screen">
+      <div class="main__songofTheday">
+        <h2 class="songofTheday__title">Song of the day</h2>
+        <div class="songofTheday__contents">
+          <span class="songofTheday__contents-bookImg">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/106/58/240/10658240_20210721142853_500.jpg?cc5e6f749c544c03a9e9d87c97387685/melon/resize/282/quality/80/optimize"
+              width="180px"
+              alt="songOftheday"
+            />
+          </span>
+          <span class="songofTheday__contents-info">
+            <h3 class="songofTheday__contents-info-title">Don't Go Yet</h3>
+            <span class="songofTheday__contents-info-explain"
+              >Camila Cabello</span
+            >
+            <span class="songofTheday__contents-info-rates">
+              <i class="fa-solid fa-star fa-lg"></i>
+              <i class="fa-solid fa-star fa-lg"></i>
+              <i class="fa-solid fa-star fa-lg"></i>
+              <i class="fa-regular fa-star fa-lg"></i>
+              <i class="fa-regular fa-star fa-lg"></i>
+            </span>
+            <span class="songofTheday__contents-info-genre">
+              <span>Pop</span>
+            </span>
+            <span class="songofTheday__contents-info-book">
+              <span>
+                <i class="fa-solid fa-bookmark fa-lg"></i>
+              </span>
+              <a
+                href="https://www.youtube.com/watch?v=0Kx3sobEBFE&list=OLAK5uy_klGUkubDnce3CFk7ktdyJV0r-H-wxHlyc&index=1"
+              >
+                <span><i class="fa-solid fa-play fa-sm"></i></span>
+              </a>
+            </span>
+          </span>
+        </div>
+      </div>
+      <div class="main__topAdventures">
+        <h2 class="songofTheday__title">Top 5</h2>
+        <div class="topAdventures__contents" id="contentsScroll">
+          <div class="topAdventures__content">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/103/18/350/10318350_500.jpg?de1de9af0012ac173aef4f788122cf21/melon/resize/282/quality/80/optimize"
+              width="120px"
+              alt="song1"
+            />
+            <span class="songofTheday__contents-info">
+              <span class="songofTheday__contents-info-song"
+                >Yo x Ti, Tu x Mi</span
+              >
+              <span class="songofTheday__contents-info-aritst">Rosalia</span>
+            </span>
+          </div>
+          <div class="topAdventures__content">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/107/25/777/10725777_20220120142331_500.jpg?4bd73261284b8721a4c94082b193cea0/melon/resize/282/quality/80/optimize"
+              width="120px"
+              alt="song2"
+            />
+            <span class="songofTheday__contents-info">
+              <span class="songofTheday__contents-info-song">grateful</span>
+              <span class="songofTheday__contents-info-aritst">Dhruv</span>
+            </span>
+          </div>
+          <div class="topAdventures__content">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/107/41/588/10741588_20211015074251_500.jpg?921715d052f62f10d07aacede2246980/melon/resize/282/quality/80/optimize"
+              width="120px"
+              alt="sonsg3"
+            />
+            <span class="songofTheday__contents-info">
+              <span class="songofTheday__contents-info-song">Can I Get It</span>
+              <span class="songofTheday__contents-info-aritst">Adele</span>
+            </span>
+          </div>
+          <div class="topAdventures__content">
+            <img
+              src="https://cdnimg.melon.co.kr/cm/album/images/101/52/689/10152689_500.jpg?96bc77ad6c8a94d545fd9458133acc68/melon/resize/282/quality/80/optimize"
+              width="120px"
+              alt="song4"
+            />
+            <span class="songofTheday__contents-info">
+              <span class="songofTheday__contents-info-song">Lover Boy</span>
+              <span class="songofTheday__contents-info-aritst"
+                >Phum Viphurit</span
+              >
+            </span>
+          </div>
+          <div class="topAdventures__content">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/album/images/103/43/276/10343276_500.jpg?258d334e01c22e9d10af3976f807ee0f/melon/resize/282/quality/80/optimize"
+              width="120px"
+              alt="song5"
+            />
+            <span class="songofTheday__contents-info">
+              <span class="songofTheday__contents-info-song">Maniac</span>
+              <span class="songofTheday__contents-info-aritst">Conan Gray</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="main__popularArtist">
+        <h2 class="songofTheday__title">Popular Artist</h2>
+        <div class="popularArtist__contents">
+          <span class="songofTheday__contents-bookImg">
+            <img
+              src="https://cdnimg.melon.co.kr/cm2/artistcrop/images/008/70/307/870307_20200206121025_500.jpg?4ac84cab3feab28347c044df12636a6f/melon/resize/416/quality/80/optimize"
+              width="180px"
+              alt="songofTheday"
+            />
+          </span>
+          <span class="songofTheday__contents-info">
+            <h3 class="songofTheday__contents-info-title">Anne-Marie</h3>
+            <span class="songofTheday__contents-info-explain"
+              >Anne-Marie Rose Nicholson (born 7 April 1991),[2] known
+              professionally as Anne-Marie, is an English singer. She has
+              attained charting singles on the UK Singles Chart, including Clean
+              Bandit's "Rockabye", featuring Sean Paul, which peaked at number
+              one, as well as "Alarm"...
+              <a href="https://en.wikipedia.org/wiki/Anne-Marie">more</a></span
+            >
+          </span>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">3</span>
+            <i class="far fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-search fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__notification-xs badge badge-xs"></span>
+            <i class="fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div id="no-mobile">
+      <span>Please reduce the screen width</span>
+      <span class="no-mobile__icon">
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </span>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/fddf93e4e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/scroll.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/settings.js"></script>
+  </body>
+</html>

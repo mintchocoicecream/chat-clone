@@ -11,7 +11,6 @@
 #music {
   display: none;
   position: absolute;
-  height: 100vh;
   width: 100vw;
   background-color: var(--blue);
   top: 0;
@@ -21,6 +20,28 @@
   animation: showProfile 0.8s ease-in-out;
 }
 
+@keyframes showCrurrentMusic {
+  from {
+    opacity: 0;
+    transform: translateX(800px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#friendsMusic {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  background-color: var(--blue);
+  top: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: showCrurrentMusic 0.8s ease-in-out;
+}
+
 .screen {
   display: flex;
   flex-direction: column;
@@ -28,8 +49,8 @@
   background-color: white;
   border-radius: 15px;
   padding: 20px 30px;
-  margin: 20px 0;
-  width: 380px;
+  margin: 10px;
+  width: 400px;
 }
 /* header */
 
@@ -299,7 +320,7 @@
 
 @keyframes songs {
   from {
-    transform: translateX(280px);
+    transform: translateX(270px);
   }
   to {
     transform: translateX(-180px);
@@ -311,7 +332,7 @@
   font-weight: bold;
   margin-left: 10px;
   cursor: default;
-  animation: songs 5s ease-in infinite;
+  animation: songs 6s ease-in infinite;
 }
 
 .screen__currentSong-info span:first-child {

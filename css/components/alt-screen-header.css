@@ -1,13 +1,22 @@
 .alt-header {
   padding: var(--horizontal-space);
   padding-top: 15px;
-  margin-bottom: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
   display: flex;
   align-items: center;
 }
 
 .alt-header__column {
   width: 33%;
+}
+
+.alt-header__column i {
+  cursor: pointer;
+}
+
+.alt-header__column i:hover {
+  opacity: 0.7;
 }
 
 .alt-header__column:first-child {

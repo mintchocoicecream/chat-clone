@@ -1,0 +1,245 @@
+@import "noMobile.css";
+
+:root {
+  --box-shadow: 0px 5px 20px rgb(241, 241, 241);
+  --light-grey: rgb(228, 228, 228);
+  --lighter-grey: rgb(219, 219, 219);
+  --color-star: rgb(255, 208, 0);
+  --fontsize-title: 20px;
+  --fontsize-explain: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes showSearch {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#header-music .alt-header,
+#header-music .status-bar {
+  background-color: white;
+}
+
+#header-music .alt-header {
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+#header-music .status-bar {
+  z-index: 2;
+  opacity: 1;
+}
+
+.header-music__main-screen {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 30px;
+}
+
+.main__topAdventures,
+.main__popularArtist {
+  margin-top: 15px;
+  border-top: 2px solid var(--blue);
+}
+
+@keyframes showMain {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main__songofTheday {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  margin-top: 60px;
+  opacity: 0;
+  animation: showMain 1s ease-in-out forwards;
+}
+
+.songofTheday__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background-color: var(--blue);
+  padding: 8px;
+  color: white;
+  width: fit-content;
+  border-radius: 5px;
+}
+
+.topAdventures__contents,
+.popularArtist__contents,
+.songofTheday__contents {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.songofTheday__contents-bookImg {
+  margin-right: 20px;
+}
+
+.songofTheday__contents-bookImg img {
+  border-radius: 5px;
+}
+
+.songofTheday__contents-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.songofTheday__contents-info-song {
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.songofTheday__contents-info-aritst {
+  font-size: 13px;
+  color: var(--light-grey);
+}
+
+.songofTheday__contents-info-title {
+  font-size: var(--fontsize-title);
+  opacity: 0.9;
+  font-weight: bold;
+  margin: 0;
+}
+
+.songofTheday__contents-info-explain {
+  color: var(--lighter-grey);
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: var(--fontsize-explain);
+  padding: 5px 0;
+}
+
+.songofTheday__contents-info-rates {
+  color: var(--color-star);
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
+
+.songofTheday__contents-info-rates i {
+  cursor: pointer;
+}
+
+.nonestar {
+  color: rgb(206, 206, 206);
+}
+
+.songofTheday__contents-info-genre {
+  display: flex;
+  padding: 5px 0;
+}
+
+.songofTheday__contents-info-genre span {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--lighter-grey);
+  opacity: 0.5;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  margin-right: 8px;
+}
+
+.songofTheday__contents-info-book {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  justify-content: flex-end;
+}
+
+.songofTheday__contents-info-book span {
+  cursor: pointer;
+}
+
+.songofTheday__contents-info-book span:first-child {
+  background-color: var(--color-main);
+  padding: 0 12px;
+  margin-right: 10px;
+}
+
+.songofTheday__contents-info-book span:first-child:hover {
+  color: var(--blue);
+}
+
+.songofTheday__contents-info-book span:last-child {
+  background-color: tomato;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.songofTheday__contents-info-book span:hover {
+  opacity: 0.6;
+}
+
+.main__topAdventures {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  animation: showMain 1s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.main__topAdventures img {
+  width: 120px;
+  height: 120px;
+}
+
+.topAdventures__contents {
+  overflow-x: scroll;
+}
+
+.topAdventures__contents::-webkit-scrollbar {
+  display: none;
+}
+
+.topAdventures__contents {
+  -ms-overflow-style: none;
+}
+
+.topAdventures__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.topAdventures__content img {
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.main__popularArtist {
+  opacity: 0;
+  margin-bottom: 60px;
+  animation: showMain 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+.main__popularArtist a {
+  font-size: 14px;
+  color: var(--blue);
+}
+
+.main__popularArtist a:hover {
+  opacity: 0.7;
+}

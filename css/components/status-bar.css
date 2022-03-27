@@ -15,6 +15,7 @@
   padding: 5px 3px;
   position: sticky;
   box-sizing: border-box;
+  background-color: white;
   width: 100%;
   top: 0;
   animation: statusbarDown 1s ease-in-out;

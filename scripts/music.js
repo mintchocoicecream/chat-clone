@@ -1,17 +1,15 @@
 // music
 
-const myMusic = document.querySelector(".fa-music");
-const myMusicClose = document.querySelector(".fa-arrow-left");
-const musicModal = document.getElementById("music");
+const musicHome = document.getElementById("header-music");
+const currentMusic = document.getElementById("currentSong");
+const currentMusicModal = document.getElementById("friendsMusic");
+const currentMusicClose = document.getElementById("musicClose");
 
 
-myMusicClose.onclick = () => {
-    musicModal.style.display = "none";
+currentMusic.onclick = () => {
+  currentMusicModal.style.display = "flex";
 }
 
-
-function handleShowMusic() {
-    musicModal.style.display = "flex";
+musicClose.onclick = () => {
+  currentMusicModal.style.display = "none";
 }
-
-myMusic.addEventListener("click", handleShowMusic);
