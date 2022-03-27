@@ -1,7 +1,10 @@
 // my profile click
 const myProfile = document.getElementById("user-component__title-me");
+const friendProfile = document.getElementById("user-component__title-fr");
 const profileModal = document.getElementById("profile");
+const profileFriendsModal = document.getElementById("profile__friends");
 const profileClose = document.getElementById("profile_modalClose");
+const profileFrClose = document.getElementById("profile-fr_modalClose");
 const friendsMusic = document.querySelector(".user-component__music");
 const myMusicClose = document.querySelector(".fa-arrow-left");
 const musicModal = document.getElementById("music");
@@ -12,8 +15,17 @@ function handleShowProfile() {
     profileModal.style.display = "flex";
 }
 
+friendProfile.onclick = () => {
+    profileFriendsModal.style.display = "flex";
+}
+
+
 profileClose.onclick = () => {
     profileModal.style.display = "none";
+}
+
+profileFrClose.onclick = () => {
+    profileFriendsModal.style.display = "none";
 }
 
 function handleShowMusic() {
@@ -23,6 +35,7 @@ function handleShowMusic() {
 myMusicClose.onclick = () => {
     musicModal.style.display = "none";
 }
+
 
 myProfile.addEventListener("click", handleShowProfile);
 friendsMusic.addEventListener("click", handleShowMusic);

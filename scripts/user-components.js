@@ -2,7 +2,8 @@
 const userLoginForm = document.getElementById("login-form");
 const usernameInput = document.getElementById("login-form__username");
 const userProfile = document.querySelector(".profile__user-name");
-const userComponentMe = document.getElementById("user-component__me");
+const openChat = document.querySelector(".openchat__comment");
+const userComponentMe = document.getElementById("user-component__title-me");
 const CHATUSERNAME_KEY = "chatusername";
 const savedChatUsername = localStorage.getItem(CHATUSERNAME_KEY);
 const currentLink = document.location.href;
@@ -14,9 +15,9 @@ function onChatLoginSubmit() {
 }
 
 function painting(username) {
-    const userName = userComponentMe.querySelector("h4");
-    userName.innerText = username;
+    userComponentMe.innerText = username;
     userProfile.innerText = username;
+    openChat.innerText = username;
 }
 
 if (savedChatUsername === null) {

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Open Chat - MintchocoTalk</title>
+  </head>
+  <body id="openchat-screen">
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span></span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div id="clock" class="status-bar__column">
+        <span></span>
+      </div>
+      <div class="status-bar__column">
+        <span>100%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="javascript:history.back();">
+          <i class="fa-solid fa-angle-left fa-xl"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">블루</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
+    </header>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Saturday, March 26, 2022</div>
+      <div class="message-row">
+        <div class="user-component__ch">
+          <img
+            src="img/KakaoTalk_20220308_205327725.jpg"
+            class="user-components__avatar user-components__avatar--xs"
+          />
+        </div>
+        <div class="message-row__content">
+          <span class="message__author">클레멘타인</span>
+          <div class="message__info">
+            <span class="message__bubble">💙</span>
+            <span class="message__time">03:42</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <div class="user-component__ch">
+          <img
+            src="https://www.kroger.com/product/images/large/front/0007776486223
+            "
+            class="user-components__avatar user-components__avatar--xs"
+          />
+        </div>
+        <div class="message-row__content">
+          <span class="message__author">지니</span>
+          <div class="message__info">
+            <span class="message__bubble">지니 is free</span>
+            <span class="message__time">04:01</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row">
+        <div class="user-component__ch">
+          <img
+            src="https://m.media-amazon.com/images/I/51gHOuNJ1ML._AC_.jpg
+            "
+            class="user-components__avatar user-components__avatar--xs"
+          />
+        </div>
+        <div class="message-row__content">
+          <span class="message__author">스타크</span>
+          <div class="message__info">
+            <span class="message__bubble">I love you 3000</span>
+            <span class="message__time">03:50</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row__comment">
+        <span> 스타크님이 퇴장하였습니다. </span>
+      </div>
+      <div class="message-row">
+        <div class="user-component__ch">
+          <img
+            src="https://w7.pngwing.com/pngs/411/411/png-transparent-donald-duck-daisy-duck-mickey-mouse-minnie-mouse-donald-duck-heroes-vertebrate-donald-duck-thumbnail.png"
+            class="user-components__avatar user-components__avatar--xs"
+          />
+        </div>
+        <div class="message-row__content">
+          <span class="message__author">도널드</span>
+          <div class="message__info">
+            <span class="message__bubble">duck</span>
+            <span class="message__time">03:50</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row__comment">
+        <span>
+          <h4 id="user-component__title-me">스타크</h4>
+          님이 입장하였습니다.
+        </span>
+      </div>
+    </main>
+
+    <form class="write-message">
+      <div class="write-message__column">
+        <i class="fa-regular fa-square-plus fa-xl"></i>
+      </div>
+      <div class="write-message__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+    <div id="no-mobile">
+      <span>Please reduce the screen width</span>
+      <span class="no-mobile__icon">
+        <i class="fa-solid fa-arrow-right-long"></i>
+        <i class="fa-solid fa-tablet-screen-button"></i>
+        <i class="fa-solid fa-arrow-left-long"></i>
+      </span>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/fddf93e4e6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/user-components.js"></script>
+  </body>
+</html>

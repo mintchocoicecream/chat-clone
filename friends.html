@@ -95,7 +95,7 @@
           </div>
         </div>
       </div>
-      <div class="friends-screen__channel">
+      <div class="friends-screen__channel" id="channel">
         <div class="friends-screen__channel-header">
           <span>Friends</span>
           <span class="friends-screen__channel-toggle" id="friendsToggle"
@@ -111,7 +111,10 @@
               class="user-components__avatar user-components__avatar--sm"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
+              <h4
+                class="user-component__title user-component__title--not-bold"
+                id="user-component__title-fr"
+              >
                 Rachel
               </h4>
               <h6 class="user-component__subtitle">:)</h6>
@@ -191,6 +194,39 @@
             <span class="profile__user-edits_icons">
               <i class="fa-solid fa-quote-right fa-xl"></i>
               <h6 class="profile__user-edits_names">내 스토리</h6>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="profile__friends">
+      <div class="profile__contents">
+        <div class="profile__icons">
+          <span id="profile-fr_modalClose" class="profile__modal-close"
+            >&times;</span
+          >
+          <i class="fa-solid fa-arrows-rotate fa-xs"></i>
+        </div>
+        <div class="profile__comment">
+          <span>:)</span>
+        </div>
+        <div class="profile__mainInfo">
+          <div class="profile__user-component" id="user-component__me">
+            <img
+              class="user-components__avatar-nomargin user-components__avatar--xl"
+              src="img/rachel.jpg"
+              alt="profile_photo"
+            />
+            <h4 class="profile__user-name">Rachel</h4>
+          </div>
+          <div class="profile__user-edits profile-fr__user-edits">
+            <span class="profile__user-edits_icons">
+              <i class="far fa-comment fa-xl"></i>
+              <h6 class="profile__user-edits_names">Rachel과 채팅</h6>
+            </span>
+            <span class="profile__user-edits_icons">
+              <i class="fa-solid fa-quote-right fa-xl"></i>
+              <h6 class="profile__user-edits_names">Rachel의 스토리</h6>
             </span>
           </div>
         </div>

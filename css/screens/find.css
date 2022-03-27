@@ -12,12 +12,33 @@
 }
 
 .recommended-friends span {
-  display: block;
-  margin: 100px 0;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 500;
-  color: var(--light-black);
+  display: flex;
+  flex-direction: column;
+}
+
+.recommended-friends h4 {
+  font-size: 16px;
+}
+
+.recommended-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.recommended-component:hover h4 {
+  color: var(--blue);
+}
+
+.recommended-component img {
+  margin-right: 10px;
+}
+
+.recommended-friends .fa-plus:hover {
+  color: var(--blue);
 }
 
 .open-chat {
@@ -36,15 +57,35 @@
 
 .open-chat__header span {
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.open-chat__header span:hover {
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .open-post {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.open-post:hover .open-post__title {
+  color: var(--blue);
+}
+
+.open-post:active {
+  background-color: var(--blue);
+}
+
+.open-post:active .open-post__title {
+  color: white;
 }
 
 .open-post__title {
+  width: fit-content;
   font-weight: bold;
   margin-bottom: 7px;
 }

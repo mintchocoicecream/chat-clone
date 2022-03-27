@@ -8,6 +8,7 @@
   }
 }
 
+#profile__friends,
 #profile {
   display: none;
   position: absolute;
@@ -20,6 +21,10 @@
   align-items: center;
   color: white;
   animation: showProfile 0.8s ease-in-out;
+}
+
+#profile__friends {
+  background-color: pink;
 }
 
 .profile__contents {
@@ -36,6 +41,15 @@
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.041);
   padding: 5px 10px;
+  font-size: 25px;
+}
+
+.profile__comment {
+  display: flex;
+  justify-content: center;
+}
+
+.profile__comment span {
   font-size: 25px;
 }
 
@@ -79,6 +93,10 @@
   padding-top: 10px;
   padding-bottom: 15px;
   margin-top: 5px;
+}
+
+.profile-fr__user-edits {
+  justify-content: space-around;
 }
 
 .profile__user-edits_icons {

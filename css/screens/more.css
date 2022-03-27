@@ -30,6 +30,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
+}
+
+.more-suggestions__icon:hover {
+  color: var(--blue);
 }
 
 .more-suggestions__icon-image {

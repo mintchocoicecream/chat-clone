@@ -1,3 +1,22 @@
+// Notice
+const notice = document.getElementById("settings_notice");
+const noticeModal = document.querySelector(".setting-row__notices");
+
+let toggle = false;
+
+notice.onclick = () => {
+    if(toggle === false){
+        noticeModal.style.display = "flex";
+        toggle = true;        
+    }else if(toggle === true){
+        noticeModal.style.display = "none";
+        toggle = false;
+    }    
+}
+
+
+
+
 // logout 
 const logout = document.getElementById("settingsLogout");
 const logoutButton = logout.querySelector("span");
