@@ -43,6 +43,7 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
   animation: mainScreenUp 1s ease-in-out;
+  height: 100vh;
 }
 
 .hidden {
