@@ -1,5 +1,6 @@
 .friends-screen {
   padding: 0px var(--horizontal-space);
+  height: 100vh;
 }
 
 #friends-display-link {
@@ -38,8 +39,18 @@
   font-weight: 500;
 }
 
+.friends-screen__channels {
+  display: flex;
+  flex-direction: column;
+}
+
 .friends-screen__channel-toggle {
   cursor: pointer;
+}
+
+.friends-screen__channel-lists {
+  display: none;
+  flex-direction: column;
 }
 
 @keyframes chevronUpToggle {
@@ -55,6 +66,19 @@
   animation: chevronUpToggle 1s ease-in-out infinite;
 }
 
+@keyframes chevronRight {
+  from {
+    transform: 0;
+  }
+  to {
+    transform: translateX(5px);
+  }
+}
+
+.channelToggle_number:hover .fa-chevron-right {
+  animation: chevronRight 1s ease-in-out infinite;
+}
+
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -63,6 +87,10 @@
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.channelToggle_below {
+  display: none;
 }
 
 #splash-screen {
@@ -78,6 +106,7 @@
   font-size: 150px;
   animation: hideSplashScreen 0.8s ease-in-out forwards;
   animation-delay: 1.5s;
+  z-index: 3;
 }
 
 @keyframes splashScreen {

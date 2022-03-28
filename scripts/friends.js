@@ -44,7 +44,11 @@ friendsMusic.addEventListener("click", handleShowMusic);
 // friends channel-toggle
 
 const channelToggle = document.getElementById("channelToggle");
-const channel = document.getElementById("channel");
+const channel = document.querySelector(".friends-screen__channels");
+
+const channelListToggle = document.querySelector(".channelToggle_number")
+const channelBelowToggle = document.querySelector(".channelToggle_below");
+const channelLists = document.querySelector(".friends-screen__channel-lists");
 
 const friendsToggle = document.getElementById("friendsToggle");
 const friends = document.getElementById("friends");
@@ -81,6 +85,31 @@ function handleFriendsToggle() {
         up.classList.remove("hidden");
         down.classList.add("hidden");
         friendsOnoff = true;
+    }
+}
+
+const listToggle = false;
+const belowToggle = false;
+
+channelListToggle.onclick = () => {
+    if(listToggle === false){
+        channelBelowToggle.style.display = "flex";
+        channelListToggle.style.display = "none";
+        channelLists.style.display = "flex";
+        listToggle = true;
+        belowToggle = false;
+    }
+}
+
+
+
+channelBelowToggle.onclick = () => {
+    if(belowToggle === false){
+        channelBelowToggle.style.display = "none";
+        channelListToggle.style.display = "block";
+        channelLists.style.display = "none";
+        belowToggle = true;
+        listToggle = false;
     }
 }
 

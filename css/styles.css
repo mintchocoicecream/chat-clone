@@ -27,6 +27,7 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
   position: relative;
+  overflow-x: hidden;
 }
 
 @keyframes mainScreenUp {
@@ -42,7 +43,6 @@ body {
 .main-screen {
   padding: 0px var(--horizontal-space);
   animation: mainScreenUp 1s ease-in-out;
-  overflow: auto;
 }
 
 .hidden {
