@@ -3,7 +3,7 @@
 ----
 ### - Skill
   - NodeJS, SocketIO, WebRTC
-### - Requirments
+### - Requirements
   - Nodemon    
       ``` npm i nodemon -D ```
   - Babel    
