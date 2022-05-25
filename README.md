@@ -1,4 +1,4 @@
-# Chat-Clone
+# Blue-blah
 #### 카카오톡 클론 코딩
   - HTML5, CSS3 다루기
   - 반응형 웹 만들기 프로젝트
